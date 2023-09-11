@@ -1,0 +1,35 @@
+{
+  "name": "test-project",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.3",
+    "cross-env": "^7.0.3",
+    "sails": "^1.5.8",
+    "sails-hook-orm": "^4.0.0",
+    "sails-hook-sockets": "^2.0.0",
+    "skipper": "^0.9.4"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "build": "npm install",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonymous node/sails user/test-project.git"
+  },
+  "author": "anonymous node/sails user",
+  "license": "",
+  "engines": {
+    "node": "^18.16"
+  }
+}
